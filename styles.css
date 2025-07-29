@@ -1,52 +1,74 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&display=swap');
+
+/* Body - serif font, soft background, left aligned */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Merriweather', serif;
+  background-color: #fafafa;
+  color: #222;
   margin: 0;
-  background-color: #f7f9fc;
-  color: #333;
+  padding: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Header - soft teal background, centered */
+header {
+  background-color: #e0f2f1;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-header {
-  background-color: #d9ecf2;
-  padding: 2rem;
-}
-
+/* Main heading - modern sans serif, teal */
 h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: #00796b;
   margin: 0;
-  font-size: 2.5rem;
-  color: #264653;
 }
 
+/* Paragraph text - easy reading */
 p {
   font-size: 1.1rem;
   margin-top: 0.5rem;
+  color: #444;
 }
 
+/* Grid container - max width and responsive */
 .grid {
+  max-width: 1000px;
+  margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
+/* Card style - white background, rounded corners, subtle shadow */
 .card {
-  background-color: #e0f7fa;
-  border: 2px solid #b2ebf2;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
   padding: 2rem;
-  border-radius: 1rem;
+  color: #004d40;
+  font-weight: 600;
   text-decoration: none;
-  color: #00796b;
-  font-weight: bold;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
+/* Card hover effect - slight lift and background change */
 .card:hover {
-  transform: scale(1.03);
-  background-color: #b2ebf2;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  background-color: #e0f2f1;
+  color: #00332f;
+  transform: translateY(-4px);
 }
 
+/* Footer - small text, centered, gray */
 footer {
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 0.9rem;
-  color: #777;
+  color: #666;
+  text-align: center;
 }
